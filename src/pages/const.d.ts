@@ -1,5 +1,5 @@
 
-declare const sepolia_override: {
+declare const sepolia: {
     readonly id: 11155111;
     readonly network: "sepolia";
     readonly name: "Sepolia";
@@ -43,4 +43,4 @@ declare const sepolia_override: {
     readonly testnet: true;
 };
 
-export { sepolia_override };
+export { sepolia };

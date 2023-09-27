@@ -1,9 +1,9 @@
 import { AppShell, Container, Header, MantineProvider } from "@mantine/core";
 import { Notifications } from "@mantine/notifications";
 import { BridgeWizardProvider } from "@/context/context";
-import { WagmiConfig, createClient, sepolia } from "wagmi";
+import { WagmiConfig, createClient } from "wagmi";
 import { ConnectKitProvider, getDefaultClient } from "connectkit";
-import { sepolia_override } from "./const";
+import { sepolia } from "./const";
 
 
 export default function MyApp({ Component, pageProps }: any) {
@@ -11,7 +11,7 @@ export default function MyApp({ Component, pageProps }: any) {
     getDefaultClient({
       appName: "Gravity NFT UI",
       walletConnectProjectId: "0b30e89125abdfb8bb0b829e5f0b9a2e",
-      chains: [sepolia_override]
+      chains: [sepolia]
     })
   );
 
