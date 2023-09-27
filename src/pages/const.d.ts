@@ -42,4 +42,4 @@ export const sepolia_override = {
         },
     },
     testnet: true,
-} as const satisfies Chain
+} as const satisfies Chain;
