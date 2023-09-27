@@ -1,6 +1,6 @@
 import { Chain } from "wagmi";
 
-let sepolia_override: Chain = {
+declare const sepolia_override: Chain = {
     id: 11155111,
     network: "sepolia",
     name: "Sepolia",
