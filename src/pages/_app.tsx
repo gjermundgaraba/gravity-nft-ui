@@ -5,7 +5,6 @@ import { WagmiConfig, createClient } from "wagmi";
 import { ConnectKitProvider, getDefaultClient } from "connectkit";
 import { sepolia } from "./const";
 
-
 export default function MyApp({ Component, pageProps }: any) {
   const client = createClient(
     getDefaultClient({

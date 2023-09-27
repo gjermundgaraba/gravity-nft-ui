@@ -1,3 +1,4 @@
+import { Chain } from "wagmi";
 
 declare const sepolia: {
     readonly id: 11155111;
@@ -43,4 +44,4 @@ declare const sepolia: {
     readonly testnet: true;
 };
 
-export { sepolia };
+export { Chain, sepolia };
