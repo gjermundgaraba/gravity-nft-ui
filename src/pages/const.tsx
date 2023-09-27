@@ -18,10 +18,10 @@ declare const sepolia_override: {
             readonly webSocket: readonly ["wss://sepolia.infura.io/ws/v3"];
         };
         readonly default: {
-            readonly http: readonly ["https://sepolia.etherscan.io"];
+            readonly http: readonly ["https://rpc-sepolia.rockx.com"];
         };
         readonly public: {
-            readonly http: readonly ["https://sepolia.etherscan.io"];
+            readonly http: readonly ["https://rpc-sepolia.rockx.com"];
         };
     };
     readonly blockExplorers: {
