@@ -1,47 +1,47 @@
 import { Chain } from "wagmi";
 
 let sepolia_override: Chain = {
-    readonly id: 11155111,
-    readonly network: "sepolia",
-    readonly name: "Sepolia",
-    readonly nativeCurrency: {
-        readonly name: "Sepolia Ether",
-        readonly symbol: "SEP",
-        readonly decimals: 18,
+    id: 11155111,
+    network: "sepolia",
+    name: "Sepolia",
+    nativeCurrency: {
+        name: "Sepolia Ether",
+        symbol: "SEP",
+        decimals: 18,
     },
-    readonly rpcUrls: {
-        readonly alchemy: {
-            readonly http: readonly["https://eth-sepolia.g.alchemy.com/v2"],
-            readonly webSocket: readonly["wss://eth-sepolia.g.alchemy.com/v2"]
+    rpcUrls: {
+        alchemy: {
+            http: readonly["https://eth-sepolia.g.alchemy.com/v2"],
+            webSocket: readonly["wss://eth-sepolia.g.alchemy.com/v2"]
         },
-        readonly infura: {
-            readonly http: readonly["https://sepolia.infura.io/v3"],
-            readonly webSocket: readonly["wss://sepolia.infura.io/ws/v3"]
+        infura: {
+            http: readonly["https://sepolia.infura.io/v3"],
+            webSocket: readonly["wss://sepolia.infura.io/ws/v3"]
         },
-        readonly default: {
-            readonly http: readonly["https://rpc-sepolia.rockx.com"]
+        default: {
+            http: readonly["https://rpc-sepolia.rockx.com"]
         },
-        readonly public: {
-            readonly http: readonly["https://rpc-sepolia.rockx.com"]
-        },
-    },
-    readonly blockExplorers: {
-        readonly etherscan: {
-            readonly name: "Etherscan",
-            readonly url: "https://sepolia.etherscan.io"
-        },
-        readonly default: {
-            readonly name: "Etherscan",
-            readonly url: "https://sepolia.etherscan.io"
+        public: {
+            http: readonly["https://rpc-sepolia.rockx.com"]
         },
     },
-    readonly contracts: {
-        readonly multicall3: {
-            readonly address: "0xca11bde05977b3631167028862be2a173976ca11",
-            readonly blockCreated: 6507670
+    blockExplorers: {
+        etherscan: {
+            name: "Etherscan",
+            url: "https://sepolia.etherscan.io"
+        },
+        default: {
+            name: "Etherscan",
+            url: "https://sepolia.etherscan.io"
         },
     },
-    readonly testnet: true
+    contracts: {
+        multicall3: {
+            address: "0xca11bde05977b3631167028862be2a173976ca11",
+            blockCreated: 6507670
+        },
+    },
+    testnet: true
 };
 
 export { sepolia_override };
