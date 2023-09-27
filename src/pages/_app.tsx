@@ -11,7 +11,7 @@ export default function MyApp({ Component, pageProps }: any) {
     getDefaultClient({
       appName: "Gravity NFT UI",
       walletConnectProjectId: "0b30e89125abdfb8bb0b829e5f0b9a2e",
-      chains: [sepolia]
+      chains: [sepolia_override]
     })
   );
 
