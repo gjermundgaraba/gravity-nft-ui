@@ -1,6 +1,6 @@
 import { Chain } from "wagmi";
 
-export const sepolia_override = {
+export const sepolia = {
     id: 11155111,
     network: "sepolia",
     name: "Sepolia",
@@ -11,37 +11,37 @@ export const sepolia_override = {
     },
     rpcUrls: {
         alchemy: {
-            http: readonly["https://eth-sepolia.g.alchemy.com/v2"],
-            webSocket: readonly["wss://eth-sepolia.g.alchemy.com/v2"]
+            http: ["https://eth-sepolia.g.alchemy.com/v2"],
+            webSocket: ["wss://eth-sepolia.g.alchemy.com/v2"],
         },
         infura: {
-            http: readonly["https://sepolia.infura.io/v3"],
-            webSocket: readonly["wss://sepolia.infura.io/ws/v3"]
+            http: ["https://sepolia.infura.io/v3"],
+            webSocket: ["wss://sepolia.infura.io/ws/v3"],
         },
         default: {
-            http: readonly["https://rpc-sepolia.rockx.com"]
+            http: ["https://rpc.sepolia.org"],
         },
         public: {
-            http: readonly["https://rpc-sepolia.rockx.com"]
+            http: ["https://rpc.sepolia.org"],
         },
     },
     blockExplorers: {
         etherscan: {
             name: "Etherscan",
-            url: "https://sepolia.etherscan.io"
+            url: "https://sepolia.etherscan.io",
         },
         default: {
             name: "Etherscan",
-            url: "https://sepolia.etherscan.io"
+            url: "https://sepolia.etherscan.io",
         },
     },
     contracts: {
         multicall3: {
             address: "0xca11bde05977b3631167028862be2a173976ca11",
-            blockCreated: 6507670
+            blockCreated: 6507670,
         },
     },
-    testnet: true
-} as const satisfies Chain;
+    testnet: true,
+} as const satisfies Chain,
 
 export { sepolia_override };
