@@ -3,6 +3,7 @@ import { Notifications } from "@mantine/notifications";
 import { BridgeWizardProvider } from "@/context/context";
 import { WagmiConfig, createClient } from "wagmi";
 import { ConnectKitProvider, getDefaultClient } from "connectkit";
+import { sepolia_override } from "./const";
 
 export default function MyApp({ Component, pageProps }: any) {
   const client = createClient(
