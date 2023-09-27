@@ -1,6 +1,6 @@
 import { Chain } from "wagmi";
 
-export const sepolia = {
+export const sepolia_override = {
     id: 11155111,
     network: "sepolia",
     name: "Sepolia",
@@ -42,6 +42,4 @@ export const sepolia = {
         },
     },
     testnet: true,
-} as const satisfies Chain,
-
-export { sepolia_override };
+} as const satisfies Chain
