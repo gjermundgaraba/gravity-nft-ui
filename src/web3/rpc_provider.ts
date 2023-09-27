@@ -19,10 +19,10 @@ export const sepolia_override = {
             webSocket: ["wss://sepolia.infura.io/ws/v3"],
         },
         default: {
-            http: ["https://rpc.sepolia.org"],
+            http: ["https://rpc-sepolia.rockx.com"],
         },
         public: {
-            http: ["https://rpc.sepolia.org"],
+            http: ["https://rpc-sepolia.rockx.com"],
         },
     },
     blockExplorers: {
