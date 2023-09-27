@@ -41,4 +41,4 @@ export declare const sepolia_override: {
         };
     };
     readonly testnet: true;
-};
+}
